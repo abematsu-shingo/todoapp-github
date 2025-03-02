@@ -12,8 +12,10 @@ addTodo.addEventListener("click", () => {
         todo.addEventListener("change", (e) => {
             if (e.target.checked) {
                 todo.style.textDecoration = "line-through";
+                todo.style.color = "#ccc";
             } else {
                 todo.style.textDecoration = "none";
+                todo.style.color = "#000";
             }
         });
     });
